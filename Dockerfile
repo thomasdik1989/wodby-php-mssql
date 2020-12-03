@@ -1,5 +1,5 @@
 FROM microsoft/mssql-tools as mssql
-FROM wodby/php:7.4-dev-macos
+FROM wodby/php:7.4-dev-macos-4.17.6
 
 COPY --from=mssql /opt/microsoft/ /opt/microsoft/
 COPY --from=mssql /opt/mssql-tools/ /opt/mssql-tools/
